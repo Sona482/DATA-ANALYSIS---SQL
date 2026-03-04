@@ -1,0 +1,23 @@
+High-Value Questions (10) for SQL-Driven E-Commerce Analysis
+
+Here’s a refined list of 10 questions that are industry-relevant, actionable, and demonstrate SQL skills:
+
+1.Top-selling products: Which products generate the highest revenue and quantity sold?
+
+2.Customer contribution: Who are the top customers by revenue and order frequency?
+
+3.Sales trends: How is revenue changing monthly/weekly over time?
+
+4.Payment performance: How many payments succeeded vs failed, and are there delays?
+
+5.Category performance: Which product categories generate the most revenue?
+
+6.Repeat vs new customers: What proportion of sales comes from repeat customers?
+
+7.High-value customers: Identify top 10% of customers contributing to overall revenue.
+
+8.Geographical insights: Which cities/regions generate the most revenue?
+
+9.Discount impact: How much revenue is generated from discounted products vs full price?
+
+10.Order fulfillment efficiency: Average time from order placement to payment confirmation, and delayed orders.
