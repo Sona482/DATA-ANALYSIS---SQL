@@ -1,0 +1,39 @@
+USE shoply;
+-- PROFILING THROUGH PRODUCT TABLE
+-- CHECK CATEGORY INCONSISTENCIES
+SELECT category
+FROM products
+ORDER BY category;
+-- SELECT DISTINCT CATEGORIES FROM PRODUCTS
+SELECT DISTINCT category
+FROM products
+ORDER BY category;
+-- FIND ZERO AND NEGATIVE PRICES
+SELECT product_id,price
+FROM products
+WHERE price<=0;
+-- FIND TOTAL OF HOW MANY NEGATIVE AND ZERO VALUES ARE THERE.
+SELECT COUNT(price),price
+FROM products
+GROUP BY price
+HAVING price<=0;
+-- ACTIVE PRODUCT WITH INVALID PRICE
+SELECT *
+FROM products
+WHERE is_active=1 AND price<=0;
+-- CHECK FOR NULLS IN CATEGORY
+SELECT *
+FROM products
+WHERE category IS NULL;
+
+-- Check duplicate product names
+SELECT product_name,COUNT(*)
+FROM products
+GROUP BY product_name
+HAVING COUNT(*)>1;
+
+
+
+
+
+
